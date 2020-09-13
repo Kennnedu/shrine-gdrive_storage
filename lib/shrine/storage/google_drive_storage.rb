@@ -74,7 +74,6 @@ class Shrine
           service = Google::Apis::DriveV3::DriveService.new
           service.client_options.application_name = ENV['APPLICATION_NAME']
           service.authorization = Google::Auth::ServiceAccountCredentials.make_creds(
-            json_key_io: File.open(ENV['GOOGLE_APPLICATION_CREDENTIALS']),
             scope: Google::Apis::DriveV3::AUTH_DRIVE)
           @google_api_client = service
         end
