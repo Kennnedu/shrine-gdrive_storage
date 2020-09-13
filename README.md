@@ -52,8 +52,11 @@ Create an `.env` file with these values:
 ```sh
 # .env
 APPLICATION_NAME = "yourapp-12345"
-GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/client_secret.json
 GOOGLE_PUBLIC_FOLDER_ID=AAAARRRRGGGBBBFFFFadsasdX
+GOOGLE_ACCOUNT_TYPE=service_account
+GOOGLE_CLIENT_ID=1111111111
+GOOGLE_CLIENT_EMAIL=qwerty-1@qwerty.iam.gserviceaccount.com
+GOOGLE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nasdkjfaslkdfhl\n-----END PRIVATE KEY-----\n"
 ```
 
 __-or-__ set the environment variables however you like.
